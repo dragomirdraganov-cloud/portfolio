@@ -321,6 +321,7 @@ h3 {
 }
 
 .section,
+.experience-section,
 .process-section,
 .contact-section {
   width: var(--content);
@@ -333,10 +334,53 @@ h3 {
 }
 
 .section-heading p:not(.eyebrow),
+.experience-section p,
 .contact-section p {
   color: var(--muted);
   font-size: 1.04rem;
   line-height: 1.7;
+}
+
+.experience-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(360px, 1fr);
+  gap: clamp(34px, 6vw, 86px);
+  align-items: start;
+}
+
+.experience-section .section-heading {
+  position: sticky;
+  top: 104px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.experience-item {
+  min-height: 218px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 26px;
+}
+
+.experience-item span {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 28px;
+  border-radius: 999px;
+  background: rgba(232, 74, 95, 0.1);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 850;
+  padding: 7px 10px;
+}
+
+.experience-item p {
+  margin-bottom: 0;
 }
 
 .filter-bar {
@@ -560,6 +604,7 @@ h3 {
 
 @media (max-width: 940px) {
   .hero,
+  .experience-section,
   .split-section,
   .contact-section {
     grid-template-columns: 1fr;
@@ -589,6 +634,10 @@ h3 {
 
   .contact-actions {
     margin-top: 0;
+  }
+
+  .experience-section .section-heading {
+    position: static;
   }
 }
 
@@ -674,8 +723,17 @@ h3 {
   }
 
   .section,
+  .experience-section,
   .process-section {
     padding: 64px 0;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-item {
+    min-height: auto;
   }
 
   .apps-grid {
