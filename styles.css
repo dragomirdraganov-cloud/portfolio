@@ -664,6 +664,41 @@ h3 {
   line-height: 1.5;
 }
 
+.footer-contact-item {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-contact-item::before,
+.social-link::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: currentColor;
+  -webkit-mask: var(--footer-icon) center / contain no-repeat;
+  mask: var(--footer-icon) center / contain no-repeat;
+}
+
+.footer-contact-email {
+  --footer-icon: url("assets/icon-email.svg");
+}
+
+.footer-contact-phone {
+  --footer-icon: url("assets/icon-phone.svg");
+}
+
+.footer-contact-location {
+  --footer-icon: url("assets/icon-location.svg");
+}
+
+.footer-contact-item span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .footer-contact a:hover,
 .footer-contact a:focus-visible,
 .footer-bottom a:hover,
@@ -690,6 +725,22 @@ h3 {
   color: var(--ink);
   font-size: 0.88rem;
   font-weight: 900;
+}
+
+.social-link-linkedin {
+  --footer-icon: url("assets/icon-linkedin.svg");
+}
+
+.social-link-github {
+  --footer-icon: url("assets/icon-github.svg");
+}
+
+.social-link-instagram {
+  --footer-icon: url("assets/icon-instagram.svg");
+}
+
+.social-link-facebook {
+  --footer-icon: url("assets/icon-facebook.svg");
 }
 
 .social-links a:hover,
