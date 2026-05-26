@@ -6,117 +6,129 @@
     <meta
       name="description"
       content="Portfolio de proyectos iOS, SwiftUI y prototipos creados por Dragomir Draganov Karlova."
+      data-i18n-meta="meta.description"
     />
     <title>Dragomir Draganov Karlova | Portfolio iOS y SwiftUI</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260526g" />
+    <link rel="stylesheet" href="styles.css?v=20260526i" />
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio" data-i18n-aria="aria.home">
         <span class="brand-mark">DD</span>
         <span>Dragomir</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+      <div class="header-actions">
+        <nav class="site-nav" data-nav>
+          <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+          <a href="#apps" data-i18n="nav.projects">Proyectos</a>
+          <a href="#metodo" data-i18n="nav.method">Método</a>
+          <a href="#stack" data-i18n="nav.stack">Stack</a>
+          <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        </nav>
+
+        <div class="language-switch" role="group" aria-label="Cambiar idioma" data-i18n-aria="aria.language">
+          <button class="is-active" type="button" data-language-option="es" aria-pressed="true">ES</button>
+          <button type="button" data-language-option="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>
         <span></span>
         <span></span>
       </button>
-
-      <nav class="site-nav" data-nav>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#apps">Proyectos</a>
-        <a href="#metodo">Metodo</a>
-        <a href="#stack">Stack</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
     </header>
 
     <main>
       <section class="hero" id="inicio">
         <div class="hero-content">
-          <p class="eyebrow">Portfolio de proyectos iOS y Swift</p>
-          <h1>Apps, prototipos y herramientas con foco mobile.</h1>
-          <p class="hero-copy">
-            Una seleccion real de repositorios donde trabajo SwiftUI, arquitectura MVVM, prototipos iOS,
-            servicios mock y pequenas herramientas para desarrollar con mas claridad.
+          <p class="eyebrow" data-i18n="hero.eyebrow">Portfolio de proyectos iOS y Swift</p>
+          <h1 data-i18n="hero.title">Apps, prototipos y herramientas con foco móvil.</h1>
+          <p class="hero-copy" data-i18n="hero.copy">
+            Una selección real de repositorios donde trabajo con SwiftUI, arquitectura MVVM, prototipos iOS,
+            servicios mock y pequeñas herramientas para desarrollar con más claridad.
           </p>
 
-          <div class="hero-actions" aria-label="Acciones principales">
-            <a class="button button-primary" href="#apps">Ver proyectos</a>
+          <div class="hero-actions" aria-label="Acciones principales" data-i18n-aria="aria.primaryActions">
+            <a class="button button-primary" href="#apps" data-i18n="hero.primaryCta">Ver proyectos</a>
             <a class="button button-secondary" href="https://github.com/dragomirdraganov-cloud">GitHub</a>
           </div>
         </div>
 
-        <div class="hero-showcase" aria-label="Vista destacada de proyectos mobile">
+        <div class="hero-showcase" aria-label="Vista destacada de proyectos móviles" data-i18n-aria="aria.showcase">
           <article class="featured-phone featured-phone-main">
-            <img src="assets/app-finanzas.svg" alt="Pantalla de una app de finanzas personales" />
+            <img
+              src="assets/app-finanzas.svg"
+              alt="Pantalla de una app de finanzas personales"
+              data-i18n-alt="alt.financeApp"
+            />
           </article>
           <article class="featured-phone featured-phone-small">
-            <img src="assets/app-habitos.svg" alt="Pantalla de una app de habitos" />
+            <img src="assets/app-habitos.svg" alt="Pantalla de una app de hábitos" data-i18n-alt="alt.habitsApp" />
           </article>
         </div>
       </section>
 
-      <section class="stats-band" aria-label="Resumen del portfolio">
+      <section class="stats-band" aria-label="Resumen del portfolio" data-i18n-aria="aria.stats">
         <div>
           <strong>8+</strong>
-          <span>features mobile documentadas</span>
+          <span data-i18n="stats.features">funcionalidades móviles documentadas</span>
         </div>
         <div>
           <strong>4</strong>
-          <span>repositorios publicos</span>
+          <span data-i18n="stats.repos">repositorios públicos</span>
         </div>
         <div>
           <strong>SwiftUI</strong>
-          <span>stack principal</span>
+          <span data-i18n="stats.stack">stack principal</span>
         </div>
       </section>
 
       <section class="experience-section" id="experiencia">
         <div class="section-heading">
-          <p class="eyebrow">Experiencia profesional</p>
-          <h2>Programador iOS centrado en producto y codigo mantenible.</h2>
-          <p>
-            Segun tu perfil publico de LinkedIn, has orientado tu carrera a crear aplicaciones iOS con Swift
-            y Objective-C, combinando implementacion mobile, estructura de proyecto y cuidado por la experiencia
+          <p class="eyebrow" data-i18n="experience.eyebrow">Experiencia profesional</p>
+          <h2 data-i18n="experience.title">Programador iOS centrado en producto y código mantenible.</h2>
+          <p data-i18n="experience.copy">
+            Mi perfil público de LinkedIn refleja una trayectoria orientada a crear aplicaciones iOS con Swift
+            y Objective-C, combinando implementación móvil, estructura de proyecto y cuidado por la experiencia
             de usuario.
           </p>
-          <a class="text-link" href="https://www.linkedin.com/in/dragomirdraganovkarlova/">
+          <a class="text-link" href="https://www.linkedin.com/in/dragomirdraganovkarlova/" data-i18n="experience.link">
             Ver perfil de LinkedIn
           </a>
         </div>
 
-        <div class="experience-grid" aria-label="Resumen de experiencia y formacion">
+        <div class="experience-grid" aria-label="Resumen de experiencia y formación" data-i18n-aria="aria.experienceGrid">
           <article class="experience-item">
-            <span>Trabajo</span>
+            <span data-i18n="experience.workLabel">Trabajo</span>
             <h3>Avantiam</h3>
-            <p>
+            <p data-i18n="experience.workCopy">
               Experiencia profesional vinculada a Avantiam desde Girona, con foco en desarrollo de aplicaciones
-              iOS y soluciones mobile.
+              iOS y soluciones móviles.
             </p>
           </article>
           <article class="experience-item">
-            <span>Especialidad</span>
+            <span data-i18n="experience.specialtyLabel">Especialidad</span>
             <h3>Swift y Objective-C</h3>
-            <p>
-              Desarrollo de apps iOS con atencion a arquitectura, claridad del codigo y bases preparadas para
+            <p data-i18n="experience.specialtyCopy">
+              Desarrollo de apps iOS con atención a la arquitectura, claridad del código y bases preparadas para
               evolucionar.
             </p>
           </article>
           <article class="experience-item">
-            <span>Formacion</span>
-            <h3>La Salle Gracia</h3>
-            <p>
-              Formacion tecnica entre 2019 y 2021, conectada con el desarrollo de aplicaciones y la practica
+            <span data-i18n="experience.educationLabel">Formación</span>
+            <h3>La Salle Gràcia</h3>
+            <p data-i18n="experience.educationCopy">
+              Formación técnica entre 2019 y 2021, conectada con el desarrollo de aplicaciones y la práctica
               profesional.
             </p>
           </article>
           <article class="experience-item">
-            <span>Ubicacion</span>
-            <h3>Girona, Cataluna</h3>
-            <p>
-              Perfil profesional ubicado en Cataluna, con portfolio publico de proyectos iOS, SwiftUI y web.
+            <span data-i18n="experience.locationLabel">Ubicación</span>
+            <h3 data-i18n="experience.locationTitle">Girona, Cataluña</h3>
+            <p data-i18n="experience.locationCopy">
+              Perfil profesional ubicado en Cataluña, con portfolio público de proyectos iOS, SwiftUI y web.
             </p>
           </article>
         </div>
@@ -124,38 +136,38 @@
 
       <section class="section" id="apps">
         <div class="section-heading">
-          <p class="eyebrow">Repositorios reales</p>
-          <h2>Proyectos destacados</h2>
-          <p>
-            Estos proyectos salen directamente de tu GitHub publico. Cada tarjeta resume el objetivo,
-            la tecnologia principal y el estado del repositorio.
+          <p class="eyebrow" data-i18n="projects.eyebrow">Repositorios reales</p>
+          <h2 data-i18n="projects.title">Proyectos destacados</h2>
+          <p data-i18n="projects.copy">
+            Estos proyectos salen directamente de mi GitHub público. Cada tarjeta resume el objetivo,
+            la tecnología principal y el estado del repositorio.
           </p>
         </div>
 
-        <div class="filter-bar" aria-label="Filtrar proyectos">
-          <button class="filter-button is-active" type="button" data-filter="all">Todas</button>
+        <div class="filter-bar" aria-label="Filtrar proyectos" data-i18n-aria="aria.filters">
+          <button class="filter-button is-active" type="button" data-filter="all" data-i18n="filters.all">Todos</button>
           <button class="filter-button" type="button" data-filter="ios">iOS</button>
           <button class="filter-button" type="button" data-filter="swiftui">SwiftUI</button>
-          <button class="filter-button" type="button" data-filter="prototipo">Prototipos</button>
-          <button class="filter-button" type="button" data-filter="herramientas">Herramientas</button>
+          <button class="filter-button" type="button" data-filter="prototipo" data-i18n="filters.prototypes">Prototipos</button>
+          <button class="filter-button" type="button" data-filter="herramientas" data-i18n="filters.tools">Herramientas</button>
           <button class="filter-button" type="button" data-filter="web">Web</button>
         </div>
 
         <div class="apps-grid" data-apps-grid>
           <article class="app-card" data-category="ios swiftui prototipo">
             <div class="app-media">
-              <img src="assets/app-viajes.svg" alt="Captura conceptual de VoltPath" />
+              <img src="assets/app-viajes.svg" alt="Captura conceptual de VoltPath" data-i18n-alt="alt.voltpath" />
             </div>
             <div class="app-content">
               <div>
                 <span class="tag">iOS · SwiftUI</span>
                 <h3>VoltPath</h3>
-                <p>
-                  App iOS para pegar o compartir una direccion y enviarla a un vehiculo conectado. MVP local
-                  con MVVM, navegacion tipada, servicios mock e historial de destinos.
+                <p data-i18n="projects.voltpathCopy">
+                  App iOS para pegar o compartir una dirección y enviarla a un vehículo conectado. MVP local
+                  con MVVM, navegación tipada, servicios mock e historial de destinos.
                 </p>
               </div>
-              <ul class="app-meta" aria-label="Detalles de VoltPath">
+              <ul class="app-meta" aria-label="Detalles de VoltPath" data-i18n-aria="aria.voltpathDetails">
                 <li>SwiftUI</li>
                 <li>Swift 6</li>
                 <li>MVVM</li>
@@ -164,6 +176,8 @@
                 class="text-link"
                 href="https://github.com/dragomirdraganov-cloud/voltpath"
                 aria-label="Ver repositorio de VoltPath"
+                data-i18n="projects.repoLink"
+                data-i18n-aria="aria.voltpathRepo"
               >
                 Ver repositorio
               </a>
@@ -172,18 +186,18 @@
 
           <article class="app-card" data-category="ios swiftui prototipo">
             <div class="app-media">
-              <img src="assets/app-finanzas.svg" alt="Captura conceptual de Bank" />
+              <img src="assets/app-finanzas.svg" alt="Captura conceptual de Bank" data-i18n-alt="alt.bank" />
             </div>
             <div class="app-content">
               <div>
                 <span class="tag">Prototipo iOS</span>
                 <h3>Bank</h3>
-                <p>
-                  Prototipo de aplicacion bancaria enfocado en una interfaz clara para consultar informacion
-                  financiera y validar flujos de producto mobile.
+                <p data-i18n="projects.bankCopy">
+                  Prototipo de aplicación bancaria enfocado en una interfaz clara para consultar información
+                  financiera y validar flujos de producto móvil.
                 </p>
               </div>
-              <ul class="app-meta" aria-label="Detalles de Bank">
+              <ul class="app-meta" aria-label="Detalles de Bank" data-i18n-aria="aria.bankDetails">
                 <li>Mobile UI</li>
                 <li>Prototype</li>
                 <li>Finance</li>
@@ -192,6 +206,8 @@
                 class="text-link"
                 href="https://github.com/dragomirdraganov-cloud/Bank"
                 aria-label="Ver repositorio de Bank"
+                data-i18n="projects.repoLink"
+                data-i18n-aria="aria.bankRepo"
               >
                 Ver repositorio
               </a>
@@ -200,18 +216,18 @@
 
           <article class="app-card" data-category="ios herramientas">
             <div class="app-media">
-              <img src="assets/app-tareas.svg" alt="Captura conceptual de iOSHelper" />
+              <img src="assets/app-tareas.svg" alt="Captura conceptual de iOSHelper" data-i18n-alt="alt.iosHelper" />
             </div>
             <div class="app-content">
               <div>
                 <span class="tag">Swift helper</span>
                 <h3>iOSHelper</h3>
-                <p>
-                  Libreria ligera para simplificar funciones, clases y objetos en proyectos iOS, reduciendo
-                  repeticion y ayudando a escribir codigo mas limpio.
+                <p data-i18n="projects.iosHelperCopy">
+                  Librería ligera para simplificar funciones, clases y objetos en proyectos iOS, reduciendo
+                  repetición y ayudando a escribir código más limpio.
                 </p>
               </div>
-              <ul class="app-meta" aria-label="Detalles de iOSHelper">
+              <ul class="app-meta" aria-label="Detalles de iOSHelper" data-i18n-aria="aria.iosHelperDetails">
                 <li>Swift</li>
                 <li>Library</li>
                 <li>Utilities</li>
@@ -220,6 +236,8 @@
                 class="text-link"
                 href="https://github.com/dragomirdraganov-cloud/iOSHelper"
                 aria-label="Ver repositorio de iOSHelper"
+                data-i18n="projects.repoLink"
+                data-i18n-aria="aria.iosHelperRepo"
               >
                 Ver repositorio
               </a>
@@ -228,18 +246,18 @@
 
           <article class="app-card" data-category="web herramientas">
             <div class="app-media">
-              <img src="assets/app-habitos.svg" alt="Captura conceptual del portfolio web" />
+              <img src="assets/app-habitos.svg" alt="Captura conceptual del portfolio web" data-i18n-alt="alt.portfolio" />
             </div>
             <div class="app-content">
               <div>
                 <span class="tag">Web portfolio</span>
                 <h3>portfolio</h3>
-                <p>
-                  Web estatica responsive para presentar proyectos, repositorios y experiencia mobile con una
-                  navegacion simple, filtros y tarjetas de caso.
+                <p data-i18n="projects.portfolioCopy">
+                  Web estática responsive para presentar proyectos, repositorios y experiencia móvil con una
+                  navegación simple, filtros y tarjetas de caso.
                 </p>
               </div>
-              <ul class="app-meta" aria-label="Detalles de portfolio">
+              <ul class="app-meta" aria-label="Detalles de portfolio" data-i18n-aria="aria.portfolioDetails">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -248,6 +266,8 @@
                 class="text-link"
                 href="https://github.com/dragomirdraganov-cloud/portfolio"
                 aria-label="Ver repositorio del portfolio"
+                data-i18n="projects.repoLink"
+                data-i18n-aria="aria.portfolioRepo"
               >
                 Ver repositorio
               </a>
@@ -258,45 +278,45 @@
 
       <section class="process-section" id="metodo">
         <div class="section-heading">
-          <p class="eyebrow">Forma de trabajo</p>
-          <h2>De la idea al repositorio mantenible</h2>
+          <p class="eyebrow" data-i18n="process.eyebrow">Forma de trabajo</p>
+          <h2 data-i18n="process.title">De la idea al repositorio mantenible</h2>
         </div>
 
         <div class="process-grid">
           <article>
             <span>01</span>
-            <h3>Producto</h3>
-            <p>Defino el caso de uso, el flujo principal y los limites del MVP antes de escribir codigo.</p>
+            <h3 data-i18n="process.productTitle">Producto</h3>
+            <p data-i18n="process.productCopy">Defino el caso de uso, el flujo principal y los límites del MVP antes de escribir código.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Arquitectura</h3>
-            <p>Uso MVVM, servicios por protocolo y rutas tipadas para que la app pueda crecer sin romperse.</p>
+            <h3 data-i18n="process.architectureTitle">Arquitectura</h3>
+            <p data-i18n="process.architectureCopy">Uso MVVM, servicios por protocolo y rutas tipadas para que la app pueda crecer sin romperse.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Interfaz</h3>
-            <p>Trabajo pantallas, estados, componentes reutilizables y design system con colores semanticos.</p>
+            <h3 data-i18n="process.interfaceTitle">Interfaz</h3>
+            <p data-i18n="process.interfaceCopy">Trabajo pantallas, estados, componentes reutilizables y design system con colores semánticos.</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Documentacion</h3>
-            <p>Documento requisitos, estructura y siguientes pasos para que cada repo sea facil de retomar.</p>
+            <h3 data-i18n="process.docsTitle">Documentación</h3>
+            <p data-i18n="process.docsCopy">Documento requisitos, estructura y siguientes pasos para que cada repo sea fácil de retomar.</p>
           </article>
         </div>
       </section>
 
       <section class="section split-section" id="stack">
         <div class="section-heading">
-          <p class="eyebrow">Stack y capacidades</p>
-          <h2>Tecnologias visibles en tus repositorios.</h2>
-          <p>
-            El contenido se centra en proyectos iOS, prototipado mobile, herramientas Swift y una base web
-            estatica para comunicar el trabajo con claridad.
+          <p class="eyebrow" data-i18n="stack.eyebrow">Stack y capacidades</p>
+          <h2 data-i18n="stack.title">Tecnologías visibles en mis repositorios.</h2>
+          <p data-i18n="stack.copy">
+            El contenido se centra en proyectos iOS, prototipado móvil, herramientas Swift y una base web
+            estática para comunicar el trabajo con claridad.
           </p>
         </div>
 
-        <div class="stack-list" aria-label="Tecnologias y capacidades">
+        <div class="stack-list" aria-label="Tecnologías y capacidades" data-i18n-aria="aria.stack">
           <span>SwiftUI</span>
           <span>Swift</span>
           <span>Objective-C</span>
@@ -315,39 +335,39 @@
 
       <section class="contact-section" id="contacto">
         <div>
-          <p class="eyebrow">Codigo abierto</p>
-          <h2>Explora los repositorios en GitHub.</h2>
-          <p>
-            El portfolio enlaza directamente a los proyectos publicos para que puedas mostrar codigo,
-            documentacion y evolucion real de cada idea.
+          <p class="eyebrow" data-i18n="contact.eyebrow">Código abierto</p>
+          <h2 data-i18n="contact.title">Explora los repositorios en GitHub.</h2>
+          <p data-i18n="contact.copy">
+            El portfolio enlaza directamente a los proyectos públicos para mostrar código, documentación y la
+            evolución real de cada idea.
           </p>
         </div>
         <div class="contact-actions">
-          <a class="button button-primary" href="https://github.com/dragomirdraganov-cloud">Ver GitHub</a>
-          <a class="button button-secondary" href="#apps">Ver proyectos</a>
+          <a class="button button-primary" href="https://github.com/dragomirdraganov-cloud" data-i18n="contact.github">Ver GitHub</a>
+          <a class="button button-secondary" href="#apps" data-i18n="contact.projects">Ver proyectos</a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer" aria-label="Informacion de contacto">
+    <footer class="site-footer" aria-label="Información de contacto" data-i18n-aria="aria.footer">
       <div class="footer-main">
         <div>
-          <a class="brand footer-brand" href="#inicio" aria-label="Ir al inicio">
+          <a class="brand footer-brand" href="#inicio" aria-label="Ir al inicio" data-i18n-aria="aria.home">
             <span class="brand-mark">DD</span>
             <span>Dragomir Draganov Karlova</span>
           </a>
-          <p>
-            Programador iOS con foco en Swift, SwiftUI, prototipos mobile y bases de codigo mantenibles.
+          <p data-i18n="footer.copy">
+            Programador iOS con foco en Swift, SwiftUI, prototipos móviles y bases de código mantenibles.
           </p>
         </div>
 
         <address class="footer-contact">
           <a href="mailto:dragomirdraganovkarlova@gmail.com">dragomirdraganovkarlova@gmail.com</a>
           <a href="tel:+34671089998">+34 671 08 99 98</a>
-          <span>Espana, Girona, calle Narcis Blanch i Illa 39</span>
+          <span data-i18n="footer.location">España, Girona, calle Narcís Blanch i Illa 39</span>
         </address>
 
-        <nav class="social-links" aria-label="Redes sociales">
+        <nav class="social-links" aria-label="Redes sociales" data-i18n-aria="aria.social">
           <a href="https://www.linkedin.com/in/dragomirdraganovkarlova/" aria-label="LinkedIn">in</a>
           <a href="https://github.com/dragomirdraganov-cloud" aria-label="GitHub">GH</a>
           <a href="https://www.instagram.com/dkata__/" aria-label="Instagram">IG</a>
@@ -357,10 +377,10 @@
 
       <div class="footer-bottom">
         <span>© 2026 Dragomir Draganov Karlova</span>
-        <a href="#inicio">Volver arriba</a>
+        <a href="#inicio" data-i18n="footer.top">Volver arriba</a>
       </div>
     </footer>
 
-    <script src="script.js?v=20260526h"></script>
+    <script src="script.js?v=20260526i"></script>
   </body>
 </html>
