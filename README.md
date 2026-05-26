@@ -12,5 +12,6 @@ Abre `index.html` directamente en el navegador.
 - Ajusta estilos en `styles.css`.
 - Sustituye visuales en `assets/`.
 - Consulta la pauta de mantenimiento en `docs/portfolio-plan.md`.
+- Consulta el flujo de QA y skills en `docs/skill-playbook.md`.
 
 No necesita instalacion ni servidor de desarrollo.
