@@ -4,6 +4,12 @@ const nav = document.querySelector("[data-nav]");
 const filterButtons = document.querySelectorAll("[data-filter]");
 const appCards = document.querySelectorAll("[data-category]");
 
+const closeNav = () => {
+  body.classList.remove("nav-open");
+  navToggle?.setAttribute("aria-expanded", "false");
+  navToggle?.setAttribute("aria-label", "Abrir menu");
+};
+
 navToggle?.addEventListener("click", () => {
   const isOpen = body.classList.toggle("nav-open");
   navToggle.setAttribute("aria-expanded", String(isOpen));
@@ -12,9 +18,20 @@ navToggle?.addEventListener("click", () => {
 
 nav?.addEventListener("click", (event) => {
   if (event.target instanceof HTMLAnchorElement) {
-    body.classList.remove("nav-open");
-    navToggle?.setAttribute("aria-expanded", "false");
-    navToggle?.setAttribute("aria-label", "Abrir menu");
+    closeNav();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!body.classList.contains("nav-open") || !(event.target instanceof Node)) {
+    return;
+  }
+
+  const clickIsInsideNav = nav?.contains(event.target) ?? false;
+  const clickIsToggle = navToggle?.contains(event.target) ?? false;
+
+  if (!clickIsInsideNav && !clickIsToggle) {
+    closeNav();
   }
 });
 
