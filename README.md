@@ -1,6 +1,6 @@
-# Portfolio de aplicaciones moviles
+# Portfolio iOS y SwiftUI
 
-Web estatica para mostrar aplicaciones moviles creadas por Dragomir Draganov Karlova.
+Web estatica para mostrar proyectos reales de la cuenta de GitHub `dragomirdraganov-cloud`, incluyendo apps iOS, prototipos, herramientas Swift y este portfolio.
 
 ## Como verlo
 

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portfolio de aplicaciones moviles creadas por Dragomir Draganov Karlova."
+      content="Portfolio de proyectos iOS, SwiftUI y prototipos creados por Dragomir Draganov Karlova."
     />
-    <title>Dragomir Draganov Karlova | Portfolio de apps moviles</title>
+    <title>Dragomir Draganov Karlova | Portfolio iOS y SwiftUI</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260526c" />
+    <link rel="stylesheet" href="styles.css?v=20260526e" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -24,7 +24,7 @@
       </button>
 
       <nav class="site-nav" data-nav>
-        <a href="#apps">Apps</a>
+        <a href="#apps">Proyectos</a>
         <a href="#metodo">Metodo</a>
         <a href="#stack">Stack</a>
         <a href="#contacto">Contacto</a>
@@ -34,16 +34,16 @@
     <main>
       <section class="hero" id="inicio">
         <div class="hero-content">
-          <p class="eyebrow">Portfolio de aplicaciones moviles</p>
-          <h1>Apps utiles, cuidadas y listas para crecer.</h1>
+          <p class="eyebrow">Portfolio de proyectos iOS y Swift</p>
+          <h1>Apps, prototipos y herramientas con foco mobile.</h1>
           <p class="hero-copy">
-            Una seleccion de proyectos mobile donde junto producto, interfaz y ejecucion tecnica para crear
-            experiencias claras desde el primer toque.
+            Una seleccion real de repositorios donde trabajo SwiftUI, arquitectura MVVM, prototipos iOS,
+            servicios mock y pequenas herramientas para desarrollar con mas claridad.
           </p>
 
           <div class="hero-actions" aria-label="Acciones principales">
-            <a class="button button-primary" href="#apps">Ver aplicaciones</a>
-            <a class="button button-secondary" href="mailto:hola@tudominio.com">Contactar</a>
+            <a class="button button-primary" href="#apps">Ver proyectos</a>
+            <a class="button button-secondary" href="https://github.com/dragomirdraganov-cloud">GitHub</a>
           </div>
         </div>
 
@@ -60,141 +60,146 @@
       <section class="stats-band" aria-label="Resumen del portfolio">
         <div>
           <strong>8+</strong>
-          <span>apps creadas</span>
+          <span>features mobile documentadas</span>
         </div>
         <div>
           <strong>4</strong>
-          <span>categorias</span>
+          <span>repositorios publicos</span>
         </div>
         <div>
-          <strong>iOS + Android</strong>
-          <span>enfoque multiplataforma</span>
+          <strong>SwiftUI</strong>
+          <span>stack principal</span>
         </div>
       </section>
 
       <section class="section" id="apps">
         <div class="section-heading">
-          <p class="eyebrow">Trabajo reciente</p>
-          <h2>Aplicaciones destacadas</h2>
+          <p class="eyebrow">Repositorios reales</p>
+          <h2>Proyectos destacados</h2>
           <p>
-            Cambia nombres, textos, enlaces y capturas cuando tengas los datos finales. La estructura ya esta
-            preparada para crecer sin complicarse.
+            Estos proyectos salen directamente de tu GitHub publico. Cada tarjeta resume el objetivo,
+            la tecnologia principal y el estado del repositorio.
           </p>
         </div>
 
         <div class="filter-bar" aria-label="Filtrar proyectos">
           <button class="filter-button is-active" type="button" data-filter="all">Todas</button>
-          <button class="filter-button" type="button" data-filter="productividad">Productividad</button>
-          <button class="filter-button" type="button" data-filter="salud">Salud</button>
-          <button class="filter-button" type="button" data-filter="finanzas">Finanzas</button>
-          <button class="filter-button" type="button" data-filter="ocio">Ocio</button>
+          <button class="filter-button" type="button" data-filter="ios">iOS</button>
+          <button class="filter-button" type="button" data-filter="swiftui">SwiftUI</button>
+          <button class="filter-button" type="button" data-filter="prototipo">Prototipos</button>
+          <button class="filter-button" type="button" data-filter="herramientas">Herramientas</button>
+          <button class="filter-button" type="button" data-filter="web">Web</button>
         </div>
 
         <div class="apps-grid" data-apps-grid>
-          <article class="app-card" data-category="finanzas">
+          <article class="app-card" data-category="ios swiftui prototipo">
             <div class="app-media">
-              <img src="assets/app-finanzas.svg" alt="Captura conceptual de PocketFlow" />
+              <img src="assets/app-viajes.svg" alt="Captura conceptual de VoltPath" />
             </div>
             <div class="app-content">
               <div>
-                <span class="tag">Finanzas</span>
-                <h3>PocketFlow</h3>
+                <span class="tag">iOS · SwiftUI</span>
+                <h3>VoltPath</h3>
                 <p>
-                  Control de gastos y objetivos mensuales con una lectura visual rapida del estado financiero.
+                  App iOS para pegar o compartir una direccion y enviarla a un vehiculo conectado. MVP local
+                  con MVVM, navegacion tipada, servicios mock e historial de destinos.
                 </p>
               </div>
-              <ul class="app-meta" aria-label="Detalles de PocketFlow">
-                <li>Flutter</li>
-                <li>Firebase</li>
-                <li>UI dashboard</li>
-              </ul>
-              <a
-                class="text-link"
-                href="mailto:hola@tudominio.com?subject=Consulta%20sobre%20PocketFlow"
-                aria-label="Consultar PocketFlow por email"
-              >
-                Consultar app
-              </a>
-            </div>
-          </article>
-
-          <article class="app-card" data-category="salud productividad">
-            <div class="app-media">
-              <img src="assets/app-habitos.svg" alt="Captura conceptual de HabitPulse" />
-            </div>
-            <div class="app-content">
-              <div>
-                <span class="tag">Salud</span>
-                <h3>HabitPulse</h3>
-                <p>
-                  Seguimiento de habitos diarios, rachas y recordatorios pensados para rutinas sostenibles.
-                </p>
-              </div>
-              <ul class="app-meta" aria-label="Detalles de HabitPulse">
+              <ul class="app-meta" aria-label="Detalles de VoltPath">
                 <li>SwiftUI</li>
-                <li>HealthKit</li>
-                <li>Widgets</li>
+                <li>Swift 6</li>
+                <li>MVVM</li>
               </ul>
               <a
                 class="text-link"
-                href="mailto:hola@tudominio.com?subject=Consulta%20sobre%20HabitPulse"
-                aria-label="Consultar HabitPulse por email"
+                href="https://github.com/dragomirdraganov-cloud/voltpath"
+                aria-label="Ver repositorio de VoltPath"
               >
-                Consultar app
+                Ver repositorio
               </a>
             </div>
           </article>
 
-          <article class="app-card" data-category="productividad">
+          <article class="app-card" data-category="ios swiftui prototipo">
             <div class="app-media">
-              <img src="assets/app-tareas.svg" alt="Captura conceptual de FocusBoard" />
+              <img src="assets/app-finanzas.svg" alt="Captura conceptual de Bank" />
             </div>
             <div class="app-content">
               <div>
-                <span class="tag">Productividad</span>
-                <h3>FocusBoard</h3>
+                <span class="tag">Prototipo iOS</span>
+                <h3>Bank</h3>
                 <p>
-                  Organizador de tareas con prioridades, tableros simples y estadisticas para trabajar con foco.
+                  Prototipo de aplicacion bancaria enfocado en una interfaz clara para consultar informacion
+                  financiera y validar flujos de producto mobile.
                 </p>
               </div>
-              <ul class="app-meta" aria-label="Detalles de FocusBoard">
-                <li>React Native</li>
-                <li>SQLite</li>
-                <li>Offline first</li>
+              <ul class="app-meta" aria-label="Detalles de Bank">
+                <li>Mobile UI</li>
+                <li>Prototype</li>
+                <li>Finance</li>
               </ul>
               <a
                 class="text-link"
-                href="mailto:hola@tudominio.com?subject=Consulta%20sobre%20FocusBoard"
-                aria-label="Consultar FocusBoard por email"
+                href="https://github.com/dragomirdraganov-cloud/Bank"
+                aria-label="Ver repositorio de Bank"
               >
-                Consultar app
+                Ver repositorio
               </a>
             </div>
           </article>
 
-          <article class="app-card" data-category="ocio">
+          <article class="app-card" data-category="ios herramientas">
             <div class="app-media">
-              <img src="assets/app-viajes.svg" alt="Captura conceptual de TripNest" />
+              <img src="assets/app-tareas.svg" alt="Captura conceptual de iOSHelper" />
             </div>
             <div class="app-content">
               <div>
-                <span class="tag">Ocio</span>
-                <h3>TripNest</h3>
+                <span class="tag">Swift helper</span>
+                <h3>iOSHelper</h3>
                 <p>
-                  Planificador de escapadas con listas compartidas, mapas y colecciones por destino.
+                  Libreria ligera para simplificar funciones, clases y objetos en proyectos iOS, reduciendo
+                  repeticion y ayudando a escribir codigo mas limpio.
                 </p>
               </div>
-              <ul class="app-meta" aria-label="Detalles de TripNest">
-                <li>Kotlin</li>
-                <li>Maps API</li>
-                <li>Colaborativo</li>
+              <ul class="app-meta" aria-label="Detalles de iOSHelper">
+                <li>Swift</li>
+                <li>Library</li>
+                <li>Utilities</li>
               </ul>
               <a
                 class="text-link"
-                href="mailto:hola@tudominio.com?subject=Consulta%20sobre%20TripNest"
-                aria-label="Consultar TripNest por email"
+                href="https://github.com/dragomirdraganov-cloud/iOSHelper"
+                aria-label="Ver repositorio de iOSHelper"
               >
-                Consultar app
+                Ver repositorio
+              </a>
+            </div>
+          </article>
+
+          <article class="app-card" data-category="web herramientas">
+            <div class="app-media">
+              <img src="assets/app-habitos.svg" alt="Captura conceptual del portfolio web" />
+            </div>
+            <div class="app-content">
+              <div>
+                <span class="tag">Web portfolio</span>
+                <h3>portfolio</h3>
+                <p>
+                  Web estatica responsive para presentar proyectos, repositorios y experiencia mobile con una
+                  navegacion simple, filtros y tarjetas de caso.
+                </p>
+              </div>
+              <ul class="app-meta" aria-label="Detalles de portfolio">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a
+                class="text-link"
+                href="https://github.com/dragomirdraganov-cloud/portfolio"
+                aria-label="Ver repositorio del portfolio"
+              >
+                Ver repositorio
               </a>
             </div>
           </article>
@@ -204,29 +209,29 @@
       <section class="process-section" id="metodo">
         <div class="section-heading">
           <p class="eyebrow">Forma de trabajo</p>
-          <h2>De la idea al producto usable</h2>
+          <h2>De la idea al repositorio mantenible</h2>
         </div>
 
         <div class="process-grid">
           <article>
             <span>01</span>
-            <h3>Descubrimiento</h3>
-            <p>Defino el problema, usuarios principales y el flujo que tiene que sentirse obvio.</p>
+            <h3>Producto</h3>
+            <p>Defino el caso de uso, el flujo principal y los limites del MVP antes de escribir codigo.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Prototipo</h3>
-            <p>Construyo pantallas clave, estados y navegacion antes de cerrar la implementacion.</p>
+            <h3>Arquitectura</h3>
+            <p>Uso MVVM, servicios por protocolo y rutas tipadas para que la app pueda crecer sin romperse.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Desarrollo</h3>
-            <p>Priorizo rendimiento, accesibilidad, persistencia y una base facil de mantener.</p>
+            <h3>Interfaz</h3>
+            <p>Trabajo pantallas, estados, componentes reutilizables y design system con colores semanticos.</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Iteracion</h3>
-            <p>Mido, recojo feedback y ajusto la experiencia para que el producto respire mejor.</p>
+            <h3>Documentacion</h3>
+            <p>Documento requisitos, estructura y siguientes pasos para que cada repo sea facil de retomar.</p>
           </article>
         </div>
       </section>
@@ -234,38 +239,40 @@
       <section class="section split-section" id="stack">
         <div class="section-heading">
           <p class="eyebrow">Stack y capacidades</p>
-          <h2>Herramientas para crear mobile con criterio.</h2>
+          <h2>Tecnologias visibles en tus repositorios.</h2>
           <p>
-            La pagina esta pensada para presentar tanto el resultado visual como las decisiones tecnicas que hay
-            detras de cada aplicacion.
+            El contenido se centra en proyectos iOS, prototipado mobile, herramientas Swift y una base web
+            estatica para comunicar el trabajo con claridad.
           </p>
         </div>
 
         <div class="stack-list" aria-label="Tecnologias y capacidades">
           <span>SwiftUI</span>
-          <span>Kotlin</span>
-          <span>Flutter</span>
-          <span>React Native</span>
-          <span>Firebase</span>
-          <span>REST APIs</span>
-          <span>SQLite</span>
-          <span>UX Writing</span>
+          <span>Swift 6</span>
+          <span>iOS 17+</span>
+          <span>Xcode</span>
+          <span>MVVM</span>
+          <span>NavigationStack</span>
+          <span>Mock Services</span>
           <span>Design Systems</span>
-          <span>Analytics</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
         </div>
       </section>
 
       <section class="contact-section" id="contacto">
         <div>
-          <p class="eyebrow">Disponible para proyectos</p>
-          <h2>Hablemos de tu siguiente app.</h2>
+          <p class="eyebrow">Codigo abierto</p>
+          <h2>Explora los repositorios en GitHub.</h2>
           <p>
-            Puedes reemplazar este texto por tu email real, LinkedIn, GitHub o enlaces a App Store y Google Play.
+            El portfolio enlaza directamente a los proyectos publicos para que puedas mostrar codigo,
+            documentacion y evolucion real de cada idea.
           </p>
         </div>
         <div class="contact-actions">
-          <a class="button button-primary" href="mailto:hola@tudominio.com">Enviar email</a>
-          <a class="button button-secondary" href="#apps">Ver apps</a>
+          <a class="button button-primary" href="https://github.com/dragomirdraganov-cloud">Ver GitHub</a>
+          <a class="button button-secondary" href="#apps">Ver proyectos</a>
         </div>
       </section>
     </main>
@@ -275,6 +282,6 @@
       <a href="#inicio">Volver arriba</a>
     </footer>
 
-    <script src="script.js?v=20260526c"></script>
+    <script src="script.js?v=20260526e"></script>
   </body>
 </html>

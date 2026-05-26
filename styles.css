@@ -647,16 +647,16 @@ h3 {
   }
 
   .hero-showcase {
-    min-height: 300px;
+    min-height: 270px;
   }
 
   .featured-phone-main {
-    width: min(40%, 126px);
+    width: min(38%, 118px);
     transform: rotate(-3deg) translateX(-12px);
   }
 
   .featured-phone-small {
-    width: min(28%, 88px);
+    width: min(26%, 82px);
     right: 3%;
   }
 

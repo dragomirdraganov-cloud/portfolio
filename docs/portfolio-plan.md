@@ -2,28 +2,27 @@
 
 ## Objetivo
 
-Crear una pagina web clara y bonita para presentar aplicaciones moviles, sus capturas, tecnologias y enlaces a casos, App Store, Google Play o repositorios.
+Mantener una pagina web clara y bonita para presentar los repositorios publicos de `dragomirdraganov-cloud`, con foco en proyectos iOS, SwiftUI, prototipos mobile y herramientas Swift.
 
 ## Estructura actual
 
-- `index.html`: contenido, secciones y tarjetas de apps.
+- `index.html`: contenido, secciones y tarjetas de repositorios.
 - `styles.css`: identidad visual, responsive, layouts y estados.
 - `script.js`: menu movil y filtros por categoria.
-- `assets/`: visuales de ejemplo para las apps.
+- `assets/`: visuales de apoyo para los proyectos.
 
 ## Tareas siguientes recomendadas
 
-1. Sustituir los nombres ficticios de apps por proyectos reales.
-2. Cambiar `hola@tudominio.com` por el email de contacto correcto.
-3. Reemplazar las imagenes SVG de ejemplo por capturas reales cuando esten disponibles.
-4. Actualizar los enlaces temporales de email por App Store, Google Play, GitHub o paginas de caso.
-5. Ajustar los datos del bloque de estadisticas a numeros reales.
-6. Revisar el texto de cada caso para que incluya problema, solucion y resultado.
+1. Actualizar las tarjetas cuando se anadan nuevos repositorios publicos.
+2. Reemplazar los SVG de ejemplo por capturas reales cuando existan pantallas definitivas.
+3. Ajustar los datos del bloque de estadisticas segun crezca la cuenta.
+4. Revisar cada descripcion para que incluya problema, solucion y decision tecnica principal.
+5. Anadir enlaces a App Store, TestFlight o demos si los proyectos pasan de prototipo a producto.
 
 ## Criterios UX
 
 - La primera pantalla debe explicar rapidamente quien eres y que tipo de trabajo muestras.
-- Cada tarjeta de app debe poder escanearse en pocos segundos: categoria, nombre, descripcion, stack y enlace.
+- Cada tarjeta debe poder escanearse en pocos segundos: categoria, nombre, descripcion, stack y enlace.
 - Los filtros son secundarios; no deben impedir ver todo el portfolio.
 - En movil, las acciones principales deben ocupar todo el ancho para ser faciles de tocar.
 
