@@ -726,7 +726,7 @@ h3 {
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.94rem;
-  padding: 34px 0 42px;
+  padding: 22px 0 34px;
 }
 
 .site-footer a {
@@ -739,6 +739,10 @@ h3 {
   grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.85fr) auto;
   gap: clamp(24px, 5vw, 72px);
   align-items: start;
+}
+
+.footer-main[hidden] {
+  display: none;
 }
 
 .footer-brand {
@@ -849,11 +853,13 @@ h3 {
 
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-top: 34px;
-  border-top: 1px solid var(--line);
-  padding-top: 24px;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.footer-bottom span {
+  color: var(--ink);
+  font-weight: 800;
 }
 
 @media (max-width: 940px) {
