@@ -4,6 +4,9 @@ const nav = document.querySelector("[data-nav]");
 const filterButtons = document.querySelectorAll("[data-filter]");
 const appCards = document.querySelectorAll("[data-category]");
 const languageButtons = document.querySelectorAll("[data-language-option]");
+const photoOpenButton = document.querySelector("[data-photo-open]");
+const photoModal = document.querySelector("[data-photo-modal]");
+const photoCloseButtons = document.querySelectorAll("[data-photo-close]");
 
 const translations = {
   es: {
@@ -13,6 +16,9 @@ const translations = {
     "aria.language": "Cambiar idioma",
     "aria.openMenu": "Abrir menú",
     "aria.closeMenu": "Cerrar menú",
+    "aria.openPhoto": "Abrir foto de Dragomir",
+    "aria.closePhoto": "Cerrar foto",
+    "aria.photoModal": "Foto de Dragomir",
     "aria.primaryActions": "Acciones principales",
     "aria.showcase": "Vista destacada de proyectos móviles",
     "aria.stats": "Resumen del portfolio",
@@ -31,6 +37,7 @@ const translations = {
     "aria.social": "Redes sociales",
     "alt.financeApp": "Pantalla de una app de finanzas personales",
     "alt.habitsApp": "Pantalla de una app de hábitos",
+    "alt.profilePhoto": "Dragomir junto a una figura de Batman",
     "alt.voltpath": "Captura conceptual de VoltPath",
     "alt.bank": "Captura conceptual de Bank",
     "alt.iosHelper": "Captura conceptual de iOSHelper",
@@ -112,6 +119,9 @@ const translations = {
     "aria.language": "Change language",
     "aria.openMenu": "Open menu",
     "aria.closeMenu": "Close menu",
+    "aria.openPhoto": "Open Dragomir photo",
+    "aria.closePhoto": "Close photo",
+    "aria.photoModal": "Dragomir photo",
     "aria.primaryActions": "Primary actions",
     "aria.showcase": "Featured view of mobile projects",
     "aria.stats": "Portfolio summary",
@@ -130,6 +140,7 @@ const translations = {
     "aria.social": "Social profiles",
     "alt.financeApp": "Screen from a personal finance app",
     "alt.habitsApp": "Screen from a habits app",
+    "alt.profilePhoto": "Dragomir next to a Batman figure",
     "alt.voltpath": "Conceptual screenshot of VoltPath",
     "alt.bank": "Conceptual screenshot of Bank",
     "alt.iosHelper": "Conceptual screenshot of iOSHelper",
@@ -217,6 +228,21 @@ const closeNav = () => {
   navToggle?.setAttribute("aria-label", getTranslation("aria.openMenu"));
 };
 
+const openPhotoModal = () => {
+  if (!photoModal) return;
+  photoModal.hidden = false;
+  photoModal.setAttribute("aria-hidden", "false");
+  body.classList.add("photo-modal-open");
+};
+
+const closePhotoModal = () => {
+  if (!photoModal) return;
+  photoModal.hidden = true;
+  photoModal.setAttribute("aria-hidden", "true");
+  body.classList.remove("photo-modal-open");
+  photoOpenButton?.focus();
+};
+
 const applyLanguage = (language) => {
   currentLanguage = translations[language] ? language : defaultLanguage;
   document.documentElement.lang = currentLanguage;
@@ -280,6 +306,12 @@ document.addEventListener("click", (event) => {
   }
 });
 
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && body.classList.contains("photo-modal-open")) {
+    closePhotoModal();
+  }
+});
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const selectedFilter = button.dataset.filter ?? "all";
@@ -300,6 +332,15 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     applyLanguage(button.dataset.languageOption);
   });
+});
+
+photoOpenButton?.addEventListener("click", () => {
+  closeNav();
+  openPhotoModal();
+});
+
+photoCloseButtons.forEach((button) => {
+  button.addEventListener("click", closePhotoModal);
 });
 
 applyLanguage(currentLanguage);

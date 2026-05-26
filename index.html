@@ -10,14 +10,16 @@
     />
     <title>Dragomir Draganov Karlova | Portfolio iOS y SwiftUI</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260526j" />
+    <link rel="stylesheet" href="styles.css?v=20260526k" />
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#inicio" aria-label="Ir al inicio" data-i18n-aria="aria.home">
-        <span class="brand-mark">DD</span>
-        <span>Dragomir</span>
-      </a>
+      <div class="brand">
+        <button class="brand-avatar" type="button" aria-label="Abrir foto de Dragomir" data-photo-open data-i18n-aria="aria.openPhoto">
+          <img src="assets/profile-photo.jpg?v=20260526k" alt="" />
+        </button>
+        <a class="brand-name" href="#inicio" aria-label="Ir al inicio" data-i18n-aria="aria.home">Dragomir</a>
+      </div>
 
       <div class="header-actions">
         <nav class="site-nav" data-nav>
@@ -39,6 +41,29 @@
         <span></span>
       </button>
     </header>
+
+    <div
+      class="photo-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Foto de Dragomir"
+      data-photo-modal
+      data-i18n-aria="aria.photoModal"
+      hidden
+    >
+      <button class="photo-modal-backdrop" type="button" aria-label="Cerrar foto" data-photo-close data-i18n-aria="aria.closePhoto"></button>
+      <div class="photo-modal-content">
+        <button class="photo-modal-close" type="button" aria-label="Cerrar foto" data-photo-close data-i18n-aria="aria.closePhoto">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <img
+          src="assets/profile-photo.jpg?v=20260526k"
+          alt="Dragomir junto a una figura de Batman"
+          data-i18n-alt="alt.profilePhoto"
+        />
+      </div>
+    </div>
 
     <main>
       <section class="hero" id="inicio">
@@ -387,6 +412,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260526i"></script>
+    <script src="script.js?v=20260526k"></script>
   </body>
 </html>
