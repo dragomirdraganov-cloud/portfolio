@@ -1,0 +1,26 @@
+<svg width="360" height="740" viewBox="0 0 360 740" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mockup de app de viajes</title>
+  <desc id="desc">Pantalla conceptual con mapa, destino y lista de planes.</desc>
+  <rect width="360" height="740" rx="38" fill="#FFFDF8"/>
+  <rect width="360" height="740" rx="38" fill="#F4B942"/>
+  <rect x="28" y="34" width="304" height="672" rx="28" fill="#FFFDF8"/>
+  <rect x="54" y="68" width="252" height="238" rx="26" fill="#D8EFEA"/>
+  <path d="M54 214C100 166 128 238 173 190C218 142 250 210 306 156V306H54V214Z" fill="#0F766E"/>
+  <path d="M80 104C116 132 139 111 166 132C198 158 226 118 280 138" stroke="#3B82F6" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="222" cy="157" r="24" fill="#E84A5F"/>
+  <circle cx="222" cy="157" r="8" fill="#FFFDF8"/>
+  <rect x="54" y="344" width="160" height="18" rx="9" fill="#17191C"/>
+  <rect x="54" y="376" width="230" height="9" rx="4.5" fill="#7C838C"/>
+  <rect x="54" y="426" width="252" height="58" rx="18" fill="#F1EADF"/>
+  <circle cx="84" cy="455" r="14" fill="#3B82F6"/>
+  <rect x="112" y="443" width="122" height="10" rx="5" fill="#17191C"/>
+  <rect x="112" y="462" width="78" height="8" rx="4" fill="#7C838C"/>
+  <rect x="54" y="506" width="252" height="58" rx="18" fill="#F1EADF"/>
+  <circle cx="84" cy="535" r="14" fill="#0F766E"/>
+  <rect x="112" y="523" width="142" height="10" rx="5" fill="#17191C"/>
+  <rect x="112" y="542" width="92" height="8" rx="4" fill="#7C838C"/>
+  <rect x="54" y="586" width="252" height="58" rx="18" fill="#F1EADF"/>
+  <circle cx="84" cy="615" r="14" fill="#E84A5F"/>
+  <rect x="112" y="603" width="116" height="10" rx="5" fill="#17191C"/>
+  <rect x="112" y="622" width="72" height="8" rx="4" fill="#7C838C"/>
+</svg>

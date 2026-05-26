@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Editor settings
+.idea/
+.vscode/
+
+# Dependencies and build output, in case the site grows later
+node_modules/
+dist/
+build/
+.parcel-cache/
+.vite/
+
+# Logs and local env files
+*.log
+.env
+.env.*
+
+# Temporary files
+tmp/
+temp/

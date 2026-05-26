@@ -1,0 +1,27 @@
+<svg width="360" height="740" viewBox="0 0 360 740" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mockup de app de productividad</title>
+  <desc id="desc">Pantalla conceptual con tablero de tareas y prioridades.</desc>
+  <rect width="360" height="740" rx="38" fill="#FFFDF8"/>
+  <rect width="360" height="740" rx="38" fill="#3B82F6"/>
+  <rect x="28" y="34" width="304" height="672" rx="28" fill="#FFFDF8"/>
+  <rect x="54" y="72" width="126" height="15" rx="7.5" fill="#17191C"/>
+  <rect x="54" y="102" width="76" height="8" rx="4" fill="#7C838C"/>
+  <rect x="54" y="148" width="252" height="42" rx="14" fill="#17191C"/>
+  <rect x="74" y="164" width="114" height="10" rx="5" fill="#FFFDF8"/>
+  <rect x="54" y="226" width="112" height="190" rx="18" fill="#DCEAFE"/>
+  <rect x="74" y="250" width="64" height="10" rx="5" fill="#17191C"/>
+  <rect x="74" y="282" width="72" height="54" rx="12" fill="#FFFDF8"/>
+  <rect x="74" y="350" width="54" height="42" rx="12" fill="#FFFDF8"/>
+  <rect x="194" y="226" width="112" height="260" rx="18" fill="#F8E6B6"/>
+  <rect x="214" y="250" width="62" height="10" rx="5" fill="#17191C"/>
+  <rect x="214" y="282" width="72" height="54" rx="12" fill="#FFFDF8"/>
+  <rect x="214" y="350" width="54" height="42" rx="12" fill="#FFFDF8"/>
+  <rect x="214" y="406" width="70" height="42" rx="12" fill="#FFFDF8"/>
+  <rect x="54" y="452" width="112" height="114" rx="18" fill="#D8EFEA"/>
+  <rect x="74" y="476" width="72" height="10" rx="5" fill="#17191C"/>
+  <rect x="74" y="510" width="58" height="26" rx="10" fill="#FFFDF8"/>
+  <rect x="54" y="616" width="252" height="54" rx="18" fill="#17191C"/>
+  <circle cx="82" cy="643" r="12" fill="#F4B942"/>
+  <rect x="108" y="635" width="124" height="9" rx="4.5" fill="#FFFDF8"/>
+  <rect x="108" y="651" width="76" height="8" rx="4" fill="#8A8F98"/>
+</svg>
