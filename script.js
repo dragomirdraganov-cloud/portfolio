@@ -48,7 +48,7 @@ const translations = {
     "nav.stack": "Stack",
     "nav.contact": "Contacto",
     "hero.eyebrow": "Portfolio de proyectos iOS y Swift",
-    "hero.title": "Apps, prototipos y herramientas con foco móvil.",
+    "hero.title": "Apps, prototipos y herramientas centradas en iOS y móvil.",
     "hero.copy":
       "Una selección real de repositorios donde trabajo con SwiftUI, arquitectura MVVM, prototipos iOS, servicios mock y pequeñas herramientas para desarrollar con más claridad.",
     "hero.primaryCta": "Ver proyectos",
@@ -62,7 +62,7 @@ const translations = {
     "experience.link": "Ver perfil de LinkedIn",
     "experience.workLabel": "Trabajo",
     "experience.workCopy":
-      "Experiencia profesional vinculada a Avantiam desde Girona, con foco en desarrollo de aplicaciones iOS y soluciones móviles.",
+      "Experiencia profesional vinculada a Avantiam desde Girona, especializada en desarrollo de aplicaciones iOS y soluciones móviles.",
     "experience.specialtyLabel": "Especialidad",
     "experience.specialtyCopy":
       "Desarrollo de apps iOS con atención a la arquitectura, claridad del código y bases preparadas para evolucionar.",
@@ -108,7 +108,7 @@ const translations = {
       "El portfolio enlaza directamente a los proyectos públicos para mostrar código, documentación y la evolución real de cada idea.",
     "contact.github": "Ver GitHub",
     "contact.projects": "Ver proyectos",
-    "footer.copy": "Programador iOS con foco en Swift, SwiftUI, prototipos móviles y bases de código mantenibles.",
+    "footer.copy": "Programador iOS con experiencia en Swift, SwiftUI, prototipos móviles y bases de código mantenibles.",
     "footer.location": "España, Girona, calle Narcís Blanch i Illa 39",
     "footer.top": "Volver arriba",
   },
@@ -151,7 +151,7 @@ const translations = {
     "nav.stack": "Stack",
     "nav.contact": "Contact",
     "hero.eyebrow": "iOS and Swift project portfolio",
-    "hero.title": "Apps, prototypes and tools with a mobile focus.",
+    "hero.title": "Apps, prototypes and tools centered on iOS and mobile.",
     "hero.copy":
       "A real selection of repositories where I work with SwiftUI, MVVM architecture, iOS prototypes, mock services and small tools to develop with more clarity.",
     "hero.primaryCta": "View projects",
@@ -159,13 +159,13 @@ const translations = {
     "stats.repos": "public repositories",
     "stats.stack": "main stack",
     "experience.eyebrow": "Professional experience",
-    "experience.title": "iOS developer focused on product and maintainable code.",
+    "experience.title": "iOS developer building product-minded, maintainable code.",
     "experience.copy":
-      "My public LinkedIn profile reflects a career focused on building iOS applications with Swift and Objective-C, combining mobile implementation, project structure and care for the user experience.",
+      "My public LinkedIn profile reflects a career dedicated to building iOS applications with Swift and Objective-C, combining mobile implementation, project structure and care for the user experience.",
     "experience.link": "View LinkedIn profile",
     "experience.workLabel": "Work",
     "experience.workCopy":
-      "Professional experience linked to Avantiam from Girona, focused on iOS application development and mobile solutions.",
+      "Professional experience linked to Avantiam from Girona, specialized in iOS application development and mobile solutions.",
     "experience.specialtyLabel": "Specialty",
     "experience.specialtyCopy":
       "iOS app development with attention to architecture, code clarity and foundations that are ready to evolve.",
@@ -185,7 +185,7 @@ const translations = {
     "projects.voltpathCopy":
       "iOS app for pasting or sharing an address and sending it to a connected vehicle. Local MVP with MVVM, typed navigation, mock services and destination history.",
     "projects.bankCopy":
-      "Banking app prototype focused on a clear interface for checking financial information and validating mobile product flows.",
+      "Banking app prototype built around a clear interface for checking financial information and validating mobile product flows.",
     "projects.iosHelperCopy":
       "Lightweight library for simplifying functions, classes and objects in iOS projects, reducing repetition and helping write cleaner code.",
     "projects.portfolioCopy":
@@ -204,14 +204,14 @@ const translations = {
     "stack.eyebrow": "Stack and capabilities",
     "stack.title": "Technologies visible in my repositories.",
     "stack.copy":
-      "The content focuses on iOS projects, mobile prototyping, Swift tools and a static web foundation to communicate the work clearly.",
+      "The content is centered on iOS projects, mobile prototyping, Swift tools and a static web foundation to communicate the work clearly.",
     "contact.eyebrow": "Open source",
     "contact.title": "Explore the repositories on GitHub.",
     "contact.copy":
       "The portfolio links directly to public projects to show the code, documentation and real evolution of each idea.",
     "contact.github": "View GitHub",
     "contact.projects": "View projects",
-    "footer.copy": "iOS developer focused on Swift, SwiftUI, mobile prototypes and maintainable codebases.",
+    "footer.copy": "iOS developer with experience in Swift, SwiftUI, mobile prototypes and maintainable codebases.",
     "footer.location": "Spain, Girona, Narcís Blanch i Illa Street 39",
     "footer.top": "Back to top",
   },

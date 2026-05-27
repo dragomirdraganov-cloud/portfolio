@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Mantener una pagina web clara y bonita para presentar los repositorios publicos de `dragomirdraganov-cloud`, con foco en proyectos iOS, SwiftUI, prototipos mobile y herramientas Swift.
+Mantener una pagina web clara y bonita para presentar los repositorios publicos de `dragomirdraganov-cloud`, orientada a proyectos iOS, SwiftUI, prototipos mobile y herramientas Swift.
 
 ## Estructura actual
 
